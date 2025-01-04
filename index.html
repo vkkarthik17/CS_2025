@@ -19,7 +19,38 @@
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+  <style>
+    .tracking-in-expand {
+      -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+  
+    @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -51,8 +82,8 @@
     <div id="particles-right"></div>
 
     <div class="hero-content">
-      <h2 class="hero-heading">Welcome to CloudSync</h2>
-      <p data-aos="fade-up" data-aos-delay="200">
+      <h2 class="tracking-in-expand">Welcome to CloudSync</h2>
+      <p data-aos="fade-up" data-aos-delay="400">
         Crafting Seamless SAP and Tech Solutions for Your Success.
       </p>
       <a href="#services" class="btn" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
@@ -154,7 +185,30 @@
               <p>Integration of SAP systems using Process Integration and Process Orchestration.</p>
             </div>
           </div>
-          <!-- Add more expertise cards as needed -->
+          <!-- Card 3 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-content">
+              <i class="fas fa-layer-group"></i>
+              <h3>SAP BTP</h3>
+              <p>SAP Business Technology Platform for extending and integrating applications.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-content">
+              <i class="fas fa-chart-bar"></i>
+              <h3>SAP BIW/BOBJ</h3>
+              <p>Business Intelligence Warehouse and BusinessObjects for analytics solutions.</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-content">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>SAP Fiori</h3>
+              <p>User experience and design language for SAP applications.</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Functional Expertise Content -->
@@ -176,11 +230,35 @@
               <p>Financial accounting and controlling solutions for effective financial management.</p>
             </div>
           </div>
-          <!-- Add more expertise cards as needed -->
+          <!-- Card 3 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-content">
+              <i class="fas fa-shopping-cart"></i>
+              <h3>SAP Sales and Distribution (SD)</h3>
+              <p>Manage sales, shipping, billing, and customer service efficiently.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-content">
+              <i class="fas fa-warehouse"></i>
+              <h3>SAP Materials Management (MM)</h3>
+              <p>Optimize procurement and inventory processes across the organization.</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-content">
+              <i class="fas fa-check-circle"></i>
+              <h3>SAP Quality Management (QM)</h3>
+              <p>Ensure product quality through integrated quality management processes.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Divider -->
   <div class="section-divider" data-aos="fade-up"></div>
@@ -315,7 +393,7 @@
       <div class="contact-content">
         <!-- Contact Form -->
         <div class="contact-form" data-aos="fade-right">
-          <form action="https://formspree.io/f/your-form-id" method="POST" id="contactForm">
+          <form action="https://formspree.io/f/mkggpjzb" method="POST" id="contactForm">
             <div class="form-group">
               <div class="form-field">
                 <input type="text" name="name" id="name" required>
@@ -338,8 +416,13 @@
               <input type="text" name="company" id="company" required>
               <label for="company">Company*</label>
             </div>
+            <div class="form-field">
+              <textarea name="message" id="message" required></textarea>
+              <label for="message">Message*</label>
+            </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
+          
         </div>
         <!-- Contact Details -->
         <div class="contact-info" data-aos="fade-left">
